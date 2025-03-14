@@ -138,7 +138,7 @@ def find_with_fuzz(request,col):
 
         similarity = fuzz.ratio(request,col[i])
 
-        if similarity > mx and similarity>90:
+        if similarity > mx:
             mx = similarity
             relevant_info = i
 
